@@ -17,8 +17,8 @@ public class Inicio {
             System.out.println("      App de Mensajes");
             System.out.println(" 1. Crear Mensaje");
             System.out.println(" 2. Listar Mensajes");
-            System.out.println(" 3. Editar Mensaje");
-            System.out.println(" 4. Eliminar Mensaje");
+            System.out.println(" 3. Eliminar Mensaje");
+            System.out.println(" 4. Editar  Mensaje");
             System.out.println(" 5. Salir \n");
 
             //leer la opcion del usuario
@@ -32,10 +32,10 @@ public class Inicio {
                     MensajesService.listarMensajes();
                     break;
                 case 3:
-                    MensajesService.editarMensaje();
+                    MensajesService.borrarMensaje();
                     break;
                 case 4:
-                    MensajesService.borrarMensaje();
+                    MensajesService.editarMensaje();
                     break;
                 default:
                     break;
@@ -44,15 +44,6 @@ public class Inicio {
 
         }while(opcion != 5);
 
-        /*
-        Conexion connection = new Conexion();
-
-        try {
-            Connection cnx = connection.get_connection();
-        }
-        catch (Exception e){
-            System.out.println("Error: /n" + e);
-        }*/
     }
 
 }
